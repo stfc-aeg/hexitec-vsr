@@ -1,6 +1,13 @@
+/release
+/debug
 release/*
 debug/*
 .qmake.stash
 ui_*.h
 Makefile*
 *.pro.user
+moc_*
+*.obj
+*.exe
+*.ilk
+*.pdb

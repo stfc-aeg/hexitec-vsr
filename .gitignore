@@ -1,5 +1,6 @@
-/release
-/debug
+
+*/release
+*/debug
 release/*
 debug/*
 .qmake.stash

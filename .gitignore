@@ -2,6 +2,8 @@
 */debug
 release/*
 debug/*
+HexitecGigE/images/ideas/*
+# VSR_DLL
 *.ipch
 *.db
 .vs/*
@@ -13,6 +15,7 @@ v15/*
 *.db
 *.filters
 *.user
+# General
 .qmake.stash
 ui_*.h
 Makefile*

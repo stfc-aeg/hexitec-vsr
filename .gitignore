@@ -8,6 +8,9 @@ HexitecGigE/images/ideas/*
 *.db
 .vs/*
 */.vs
+VSR_DLL_1.0.0.2/VSR/.vs/*
+RCa*
+RCb*
 */v15
 v15/*
 *.suo
@@ -15,6 +18,11 @@ v15/*
 *.db
 *.filters
 *.user
+VSR_DLL_1.0.0.1/aS_lib/aS_messages/*.bin
+VSR_DLL_1.0.0.2/aS_lib/aS_messages/*.bin
+*/VSR/VSR/x64/*
+*/VSR/x64/*
+*/VSR/VSR-Sample/x64/*
 # General
 .qmake.stash
 ui_*.h

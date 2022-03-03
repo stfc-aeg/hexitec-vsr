@@ -35,7 +35,7 @@
 #define FACILITY_SYSTEM                  0x100
 #define FACILITY_NI_IMAQ                 0x200
 #define FACILITY_NI_SYSTEM               0x300
-#define FACILITY_PLEORA_GIGE_SYSTEM      0x400
+#define FACILITY_PLEORA_NTx_SYSTEM       0x400
 
 
 //
@@ -774,310 +774,346 @@
 //
 #define AS_NI_SYS_INVALID_MSG_BUFFER     ((DWORD)0xC3000001L)
 
-// PleoraGigE ----------------------------------------------------------------
+// PleoraNTx -----------------------------------------------------------------
 //
-// MessageId: AS_GIGE_INIT_DEVICE_ERROR
+// MessageId: AS_NTX_INIT_DEVICE_ERROR
 //
 // MessageText:
 //
-// Could not create the GigE device instance (GigE Lib: %1!d!). 
+// Could not create the NTx device instance (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_INIT_DEVICE_ERROR        ((DWORD)0xC4000001L)
+#define AS_NTX_INIT_DEVICE_ERROR         ((DWORD)0xC4000001L)
 
 //
-// MessageId: AS_GIGE_SERIAL_PORT_OPEN_ERROR
+// MessageId: AS_NTX_SERIAL_PORT_OPEN_ERROR
 //
 // MessageText:
 //
-// Could not open the serial port (GigE Lib: %1!d!). 
+// Could not open the serial port (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_SERIAL_PORT_OPEN_ERROR   ((DWORD)0xC4000002L)
+#define AS_NTX_SERIAL_PORT_OPEN_ERROR    ((DWORD)0xC4000002L)
 
 //
-// MessageId: AS_GIGE_SERIAL_PORT_CLOSE_ERROR
+// MessageId: AS_NTX_SERIAL_PORT_CLOSE_ERROR
 //
 // MessageText:
 //
-// Could not close the serial port (GigE Lib: %1!d!). 
+// Could not close the serial port (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_SERIAL_PORT_CLOSE_ERROR  ((DWORD)0xC4000003L)
+#define AS_NTX_SERIAL_PORT_CLOSE_ERROR   ((DWORD)0xC4000003L)
 
 //
-// MessageId: AS_GIGE_SERIAL_PORT_NOT_SUPPORTED
+// MessageId: AS_NTX_SERIAL_PORT_NOT_SUPPORTED
 //
 // MessageText:
 //
-// Specified serial port is not supported by the device (GigE Lib: %1!d!). 
+// Specified serial port is not supported by the device (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_SERIAL_PORT_NOT_SUPPORTED ((DWORD)0xC4000004L)
+#define AS_NTX_SERIAL_PORT_NOT_SUPPORTED ((DWORD)0xC4000004L)
 
 //
-// MessageId: AS_GIGE_SERIAL_PORT_CONFIG_FAILED
+// MessageId: AS_NTX_SERIAL_PORT_CONFIG_FAILED
 //
 // MessageText:
 //
-// Could not configure the serial port (GigE Lib: %1!d!). 
+// Could not configure the serial port (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_SERIAL_PORT_CONFIG_FAILED ((DWORD)0xC4000005L)
+#define AS_NTX_SERIAL_PORT_CONFIG_FAILED ((DWORD)0xC4000005L)
 
 //
-// MessageId: AS_GIGE_SERIAL_PORT_SET_RX_BUFFER_FAILED
+// MessageId: AS_NTX_SERIAL_PORT_SET_RX_BUFFER_FAILED
 //
 // MessageText:
 //
-// Could not set the receive buffer size of the serial port (GigE Lib: %1!d!). 
+// Could not set the receive buffer size of the serial port (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_SERIAL_PORT_SET_RX_BUFFER_FAILED ((DWORD)0xC4000006L)
+#define AS_NTX_SERIAL_PORT_SET_RX_BUFFER_FAILED ((DWORD)0xC4000006L)
 
 //
-// MessageId: AS_GIGE_SERIAL_PORT_FLUSH_ERROR
+// MessageId: AS_NTX_SERIAL_PORT_FLUSH_ERROR
 //
 // MessageText:
 //
-// Could not flush the receive buffer of the serial port (GigE Lib: %1!d!). 
+// Could not flush the receive buffer of the serial port (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_SERIAL_PORT_FLUSH_ERROR  ((DWORD)0xC4000007L)
+#define AS_NTX_SERIAL_PORT_FLUSH_ERROR   ((DWORD)0xC4000007L)
 
 //
-// MessageId: AS_GIGE_SERIAL_PORT_READ_ERROR
+// MessageId: AS_NTX_SERIAL_PORT_READ_ERROR
 //
 // MessageText:
 //
-// Read from the serial port failed (GigE Lib: %1!d!). 
+// Read from the serial port failed (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_SERIAL_PORT_READ_ERROR   ((DWORD)0xC4000008L)
+#define AS_NTX_SERIAL_PORT_READ_ERROR    ((DWORD)0xC4000008L)
 
 //
-// MessageId: AS_GIGE_SERIAL_PORT_READ_BUFFER_FULL
+// MessageId: AS_NTX_SERIAL_PORT_READ_BUFFER_FULL
 //
 // MessageText:
 //
-// The receive buffer of the serial port is full without receiving the termination character (GigE Lib: %1!d!). 
+// The receive buffer of the serial port is full without receiving the termination character (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_SERIAL_PORT_READ_BUFFER_FULL ((DWORD)0xC4000009L)
+#define AS_NTX_SERIAL_PORT_READ_BUFFER_FULL ((DWORD)0xC4000009L)
 
 //
-// MessageId: AS_GIGE_SERIAL_PORT_WRITE_ERROR
+// MessageId: AS_NTX_SERIAL_PORT_WRITE_ERROR
 //
 // MessageText:
 //
-// Write to the serial port failed (GigE Lib: %1!d!). 
+// Write to the serial port failed (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_SERIAL_PORT_WRITE_ERROR  ((DWORD)0xC400000AL)
+#define AS_NTX_SERIAL_PORT_WRITE_ERROR   ((DWORD)0xC400000AL)
 
 //
-// MessageId: AS_GIGE_PIPELINE_CREATION_ERROR
+// MessageId: AS_NTX_PIPELINE_CREATION_ERROR
 //
 // MessageText:
 //
-// Could not create the pipeline (GigE Lib: %1!d!). 
+// Could not create the pipeline (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_PIPELINE_CREATION_ERROR  ((DWORD)0xC400000BL)
+#define AS_NTX_PIPELINE_CREATION_ERROR   ((DWORD)0xC400000BL)
 
 //
-// MessageId: AS_GIGE_PIPELINE_NOT_AVAILABLE
+// MessageId: AS_NTX_PIPELINE_NOT_AVAILABLE
 //
 // MessageText:
 //
-// No pipeline available (GigE Lib: %1!d!). 
+// No pipeline available (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_PIPELINE_NOT_AVAILABLE   ((DWORD)0xC400000CL)
+#define AS_NTX_PIPELINE_NOT_AVAILABLE    ((DWORD)0xC400000CL)
 
 //
-// MessageId: AS_GIGE_PIPELINE_CREATED_ALREADY
+// MessageId: AS_NTX_PIPELINE_CREATED_ALREADY
 //
 // MessageText:
 //
-// Pipeline already created (GigE Lib: %1!d!). 
+// Pipeline already created (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_PIPELINE_CREATED_ALREADY ((DWORD)0xC400000DL)
+#define AS_NTX_PIPELINE_CREATED_ALREADY  ((DWORD)0xC400000DL)
 
 //
-// MessageId: AS_GIGE_PIPELINE_START_ERROR
+// MessageId: AS_NTX_PIPELINE_START_ERROR
 //
 // MessageText:
 //
-// Failed to start the pipeline (GigE Lib: %1!d!). 
+// Failed to start the pipeline (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_PIPELINE_START_ERROR     ((DWORD)0xC400000EL)
+#define AS_NTX_PIPELINE_START_ERROR      ((DWORD)0xC400000EL)
 
 //
-// MessageId: AS_GIGE_PIPELINE_STOP_ERROR
+// MessageId: AS_NTX_PIPELINE_STOP_ERROR
 //
 // MessageText:
 //
-// Failed to stop the pipeline (GigE Lib: %1!d!). 
+// Failed to stop the pipeline (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_PIPELINE_STOP_ERROR      ((DWORD)0xC400000FL)
+#define AS_NTX_PIPELINE_STOP_ERROR       ((DWORD)0xC400000FL)
 
 //
-// MessageId: AS_GIGE_RESET_COMMAND_ERROR
+// MessageId: AS_NTX_RESET_COMMAND_ERROR
 //
 // MessageText:
 //
-// Invoking the reset command failed (GigE Lib: %1!d!). 
+// Invoking the reset command failed (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_RESET_COMMAND_ERROR      ((DWORD)0xC4000010L)
+#define AS_NTX_RESET_COMMAND_ERROR       ((DWORD)0xC4000010L)
 
 //
-// MessageId: AS_GIGE_START_COMMAND_ERROR
+// MessageId: AS_NTX_START_COMMAND_ERROR
 //
 // MessageText:
 //
-// Invoking the start command failed (GigE Lib: %1!d!). 
+// Invoking the start command failed (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_START_COMMAND_ERROR      ((DWORD)0xC4000011L)
+#define AS_NTX_START_COMMAND_ERROR       ((DWORD)0xC4000011L)
 
 //
-// MessageId: AS_GIGE_STOP_COMMAND_ERROR
+// MessageId: AS_NTX_STOP_COMMAND_ERROR
 //
 // MessageText:
 //
-// Invoking the stop command failed (GigE Lib: %1!d!). 
+// Invoking the stop command failed (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_STOP_COMMAND_ERROR       ((DWORD)0xC4000012L)
+#define AS_NTX_STOP_COMMAND_ERROR        ((DWORD)0xC4000012L)
 
 //
-// MessageId: AS_GIGE_STREAM_OPEN_ERROR
+// MessageId: AS_NTX_STREAM_OPEN_ERROR
 //
 // MessageText:
 //
-// Could not open the stream (GigE Lib: %1!d!). 
+// Could not open the stream (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_STREAM_OPEN_ERROR        ((DWORD)0xC4000013L)
+#define AS_NTX_STREAM_OPEN_ERROR         ((DWORD)0xC4000013L)
 
 //
-// MessageId: AS_GIGE_STREAM_CLOSE_ERROR
+// MessageId: AS_NTX_STREAM_CLOSE_ERROR
 //
 // MessageText:
 //
-// Could not close the stream (GigE Lib: %1!d!). 
+// Could not close the stream (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_STREAM_CLOSE_ERROR       ((DWORD)0xC4000014L)
+#define AS_NTX_STREAM_CLOSE_ERROR        ((DWORD)0xC4000014L)
 
 //
-// MessageId: AS_GIGE_STREAM_CONFIG_ERROR
+// MessageId: AS_NTX_STREAM_CONFIG_ERROR
 //
 // MessageText:
 //
-// Could not configure the stream (GigE Lib: %1!d!). 
+// Could not configure the stream (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_STREAM_CONFIG_ERROR      ((DWORD)0xC4000015L)
+#define AS_NTX_STREAM_CONFIG_ERROR       ((DWORD)0xC4000015L)
 
 //
-// MessageId: AS_GIGE_STREAM_NOT_AVAILABLE
+// MessageId: AS_NTX_STREAM_NOT_AVAILABLE
 //
 // MessageText:
 //
-// No stream available (GigE Lib: %1!d!). 
+// No stream available (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_STREAM_NOT_AVAILABLE     ((DWORD)0xC4000016L)
+#define AS_NTX_STREAM_NOT_AVAILABLE      ((DWORD)0xC4000016L)
 
 //
-// MessageId: AS_GIGE_STREAM_ALREADY_OPENED
+// MessageId: AS_NTX_STREAM_ALREADY_OPENED
 //
 // MessageText:
 //
-// Stream already created (GigE Lib: %1!d!). 
+// Stream already created (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_STREAM_ALREADY_OPENED    ((DWORD)0xC4000017L)
+#define AS_NTX_STREAM_ALREADY_OPENED     ((DWORD)0xC4000017L)
 
 //
-// MessageId: AS_GIGE_STREAM_ENABLE_ERROR
+// MessageId: AS_NTX_STREAM_ENABLE_ERROR
 //
 // MessageText:
 //
-// Could not enable the stream (GigE Lib: %1!d!). 
+// Could not enable the stream (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_STREAM_ENABLE_ERROR      ((DWORD)0xC4000018L)
+#define AS_NTX_STREAM_ENABLE_ERROR       ((DWORD)0xC4000018L)
 
 //
-// MessageId: AS_GIGE_STREAM_DISABLE_ERROR
+// MessageId: AS_NTX_STREAM_DISABLE_ERROR
 //
 // MessageText:
 //
-// Could not disable the stream (GigE Lib: %1!d!). 
+// Could not disable the stream (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_STREAM_DISABLE_ERROR     ((DWORD)0xC4000019L)
+#define AS_NTX_STREAM_DISABLE_ERROR      ((DWORD)0xC4000019L)
 
 //
-// MessageId: AS_GIGE_BLOCKS_DROPPED
+// MessageId: AS_NTX_BLOCKS_DROPPED
 //
 // MessageText:
 //
-// Blocks dropped during the acquisition (GigE Lib: %1!d!). 
+// Blocks dropped during the acquisition (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_BLOCKS_DROPPED           ((DWORD)0xC400001AL)
+#define AS_NTX_BLOCKS_DROPPED            ((DWORD)0xC400001AL)
 
 //
-// MessageId: AS_GIGE_BLOCKS_IDS_MISSING
+// MessageId: AS_NTX_BLOCKS_IDS_MISSING
 //
 // MessageText:
 //
-// Block IDs missing during the acquisition (GigE Lib: %1!d!). 
+// Block IDs missing during the acquisition (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_BLOCKS_IDS_MISSING       ((DWORD)0xC400001BL)
+#define AS_NTX_BLOCKS_IDS_MISSING        ((DWORD)0xC400001BL)
 
 //
-// MessageId: AS_GIGE_ACQUISION_ABORTED_ERROR
+// MessageId: AS_NTX_ACQUISION_ABORTED_ERROR
 //
 // MessageText:
 //
-// Acquisition aborted caused by an error (GigE Lib: %1!d!). 
+// Acquisition aborted caused by an error (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_ACQUISION_ABORTED_ERROR  ((DWORD)0xC400001CL)
+#define AS_NTX_ACQUISION_ABORTED_ERROR   ((DWORD)0xC400001CL)
 
 //
-// MessageId: AS_GIGE_GET_INTEGER_VALUE_ERROR
+// MessageId: AS_NTX_GET_INTEGER_VALUE_ERROR
 //
 // MessageText:
 //
-// Could not get the integer value (GigE Lib: %1!d!). 
+// Could not get the integer value (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_GET_INTEGER_VALUE_ERROR  ((DWORD)0xC400001DL)
+#define AS_NTX_GET_INTEGER_VALUE_ERROR   ((DWORD)0xC400001DL)
 
 //
-// MessageId: AS_GIGE_NO_TRANSFER_BUFFER_AVAILABLE
+// MessageId: AS_NTX_NO_TRANSFER_BUFFER_AVAILABLE
 //
 // MessageText:
 //
-// No transfer buffer available (GigE Lib: %1!d!). 
+// No transfer buffer available (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_NO_TRANSFER_BUFFER_AVAILABLE ((DWORD)0xC400001EL)
+#define AS_NTX_NO_TRANSFER_BUFFER_AVAILABLE ((DWORD)0xC400001EL)
 
 //
-// MessageId: AS_GIGE_SET_IMAGE_FORMAT_ERROR
+// MessageId: AS_NTX_SET_IMAGE_FORMAT_ERROR
 //
 // MessageText:
 //
-// Could not set the image parameter (GigE Lib: %1!d!). 
+// Could not set the image parameter (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_SET_IMAGE_FORMAT_ERROR   ((DWORD)0xC400001FL)
+#define AS_NTX_SET_IMAGE_FORMAT_ERROR    ((DWORD)0xC400001FL)
 
 //
 // MessageId: AS_COLLECT_DC_NOT_READY
 //
 // MessageText:
 //
-// Could not collect the offset correction values within the specified time (GigE Lib: %1!d!). 
+// Could not collect the offset correction values within the specified time (NTx Lib: %1!d!). 
 //
 #define AS_COLLECT_DC_NOT_READY          ((DWORD)0xC4000020L)
 
 //
-// MessageId: AS_GIGE_PLEORA_USB_DRIVER_NOT_INSTALLED
+// MessageId: AS_NTX_PLEORA_USB_DRIVER_NOT_INSTALLED
 //
 // MessageText:
 //
-// The Pleora USB driver is for this device either not installed or not active (GigE Lib: %1!d!). 
+// The Pleora USB driver is for this device either not installed or not active (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_PLEORA_USB_DRIVER_NOT_INSTALLED ((DWORD)0xC4000021L)
+#define AS_NTX_PLEORA_USB_DRIVER_NOT_INSTALLED ((DWORD)0xC4000021L)
 
 //
-// MessageId: AS_GIGE_USB3_NOT_ACTIVE
+// MessageId: AS_NTX_USB3_NOT_ACTIVE
 //
 // MessageText:
 //
-// The device is not connected to a USB3 port (GigE Lib: %1!d!). 
+// The device is not connected to a USB3 port (NTx Lib: %1!d!). 
 //
-#define AS_GIGE_USB3_NOT_ACTIVE          ((DWORD)0xC4000022L)
+#define AS_NTX_USB3_NOT_ACTIVE           ((DWORD)0xC4000022L)
+
+//
+// MessageId: AS_NTX_APPL_PORT_NOT_AVAILABLE
+//
+// MessageText:
+//
+// The specified application serial port is not available (NTx Lib: %1!d!). 
+//
+#define AS_NTX_APPL_PORT_NOT_AVAILABLE   ((DWORD)0xC4000023L)
+
+//
+// MessageId: AS_NTX_SYSTEM_NOT_CORRECTLY_POWERED
+//
+// MessageText:
+//
+// The device is not correctly powered! Please check system power supply (NTx Lib: %1!d!). 
+//
+#define AS_NTX_SYSTEM_NOT_CORRECTLY_POWERED ((DWORD)0xC4000024L)
+
+//
+// MessageId: AS_NTX_CONFIGURATION_NOT_VALID
+//
+// MessageText:
+//
+// The device and or the system is not proper configured! Please check system configuration (NTx Lib: %1!d!).
+//
+#define AS_NTX_CONFIGURATION_NOT_VALID   ((DWORD)0xC4000025L)
+
+//
+// MessageId: AS_NTX_STATUS_NOT_VALID
+//
+// MessageText:
+//
+// The device has an invalid status! Please check device configuration and perform a power cycle (NTx Lib: %1!d!).
+//
+#define AS_NTX_STATUS_NOT_VALID          ((DWORD)0xC4000026L)
 
